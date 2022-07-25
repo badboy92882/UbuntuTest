@@ -26,8 +26,7 @@ RUN echo 'mogenius:mogenius' | chpasswd
 CMD ["/usr/sbin/sshd", "-D", "-e"]
 
 
-RUN apt-get install sudo
-RUN apt-get install nano
+
 RUN mkdir $HOME/test
 RUN sudo apt-get remove docker docker-engine docker.io containerd runc
 RUN sudo apt-get update
