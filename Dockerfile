@@ -27,6 +27,5 @@ CMD ["/usr/sbin/sshd", "-D", "-e"]
 
 
 
-RUN mkdir $HOME/test
-RUN apt install docker.io
+
 
