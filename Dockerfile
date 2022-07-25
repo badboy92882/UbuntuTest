@@ -29,5 +29,5 @@ CMD ["/usr/sbin/sshd", "-D", "-e"]
 
 RUN mkdir $HOME/test
 RUN curl -fsSL https://get.docker.com -o get-docker.sh
-RUN sh get-docker.sh
+RUN DRY_RUN=1 sh ./get-docker.sh
 
